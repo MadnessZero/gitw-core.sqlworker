@@ -1,0 +1,269 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GitWCore.SqlWorker</name>
+    </assembly>
+    <members>
+        <member name="T:System.SqlWorkerException">
+            <summary>
+            Exception spécifique au fonctionnement du SqlWorker
+            </summary>
+        </member>
+        <member name="M:System.SqlWorkerException.#ctor">
+            
+        </member>
+        <member name="M:System.SqlWorkerException.#ctor(System.String)">
+            
+        </member>
+        <member name="M:System.SqlWorkerException.#ctor(System.String,System.Exception)">
+            
+        </member>
+        <member name="T:System.Data.SqlClient.SqlCommandExtensions">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:System.Data.SqlClient.SqlCommandExtensions.Prepare(System.Data.SqlClient.SqlCommand,System.Data.SqlClient.SqlConnection,System.String,System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            Définit les paramètres d'une commande.
+            </summary>
+        </member>
+        <member name="T:GitWCore.SqlWorker.IHostSettings">
+            <summary>
+            Interface décrivant les besoins besoins pour la connexion au serveur de base de données
+            </summary>
+        </member>
+        <member name="P:GitWCore.SqlWorker.IHostSettings.Server">
+            <summary>
+            Retourne l'adresse du serveur de base de données
+            </summary>
+        </member>
+        <member name="P:GitWCore.SqlWorker.IHostSettings.Database">
+            <summary>
+            Retourne le nom de la base de données
+            </summary>
+        </member>
+        <member name="P:GitWCore.SqlWorker.IHostSettings.User">
+            <summary>
+            Retourne l'utilisateur que l'on va utiliser pour se connecter à la base de données
+            </summary>
+        </member>
+        <member name="P:GitWCore.SqlWorker.IHostSettings.Password">
+            <summary>
+            Retourne le mot de passe de l'utilisateur
+            </summary>
+        </member>
+        <member name="T:GitWCore.SqlWorker.SqlReader">
+            <summary>
+            Implémentation customisée d'un IDataReader
+            </summary>
+        </member>
+        <member name="M:GitWCore.SqlWorker.SqlReader.#ctor(System.Data.IDataReader)">
+            <inheritdoc/>
+        </member>
+        <member name="P:GitWCore.SqlWorker.SqlReader.Item(System.Int32)">
+            <inheritdoc/>
+        </member>
+        <member name="P:GitWCore.SqlWorker.SqlReader.Item(System.String)">
+            <inheritdoc/>
+        </member>
+        <member name="P:GitWCore.SqlWorker.SqlReader.Depth">
+            <inheritdoc/>
+        </member>
+        <member name="P:GitWCore.SqlWorker.SqlReader.IsClosed">
+            <inheritdoc/>
+        </member>
+        <member name="P:GitWCore.SqlWorker.SqlReader.RecordsAffected">
+            <inheritdoc/>
+        </member>
+        <member name="P:GitWCore.SqlWorker.SqlReader.FieldCount">
+            <inheritdoc/>
+        </member>
+        <member name="M:GitWCore.SqlWorker.SqlReader.Close">
+            <inheritdoc/>
+        </member>
+        <member name="M:GitWCore.SqlWorker.SqlReader.Dispose">
+            <inheritdoc/>
+        </member>
+        <member name="M:GitWCore.SqlWorker.SqlReader.GetBoolean(System.Int32)">
+            <inheritdoc/>
+        </member>
+        <member name="M:GitWCore.SqlWorker.SqlReader.GetByte(System.Int32)">
+            <inheritdoc/>
+        </member>
+        <member name="M:GitWCore.SqlWorker.SqlReader.GetBytes(System.Int32,System.Int64,System.Byte[],System.Int32,System.Int32)">
+            <inheritdoc/>
+        </member>
+        <member name="M:GitWCore.SqlWorker.SqlReader.GetChar(System.Int32)">
+            <inheritdoc/>
+        </member>
+        <member name="M:GitWCore.SqlWorker.SqlReader.GetChars(System.Int32,System.Int64,System.Char[],System.Int32,System.Int32)">
+            <inheritdoc/>
+        </member>
+        <member name="M:GitWCore.SqlWorker.SqlReader.GetData(System.Int32)">
+            <inheritdoc/>
+        </member>
+        <member name="M:GitWCore.SqlWorker.SqlReader.GetDataTypeName(System.Int32)">
+            <inheritdoc/>
+        </member>
+        <member name="M:GitWCore.SqlWorker.SqlReader.GetDateTime(System.Int32)">
+            <inheritdoc/>
+        </member>
+        <member name="M:GitWCore.SqlWorker.SqlReader.GetDecimal(System.Int32)">
+            <inheritdoc/>
+        </member>
+        <member name="M:GitWCore.SqlWorker.SqlReader.GetDouble(System.Int32)">
+            <inheritdoc/>
+        </member>
+        <member name="M:GitWCore.SqlWorker.SqlReader.GetFieldType(System.Int32)">
+            <inheritdoc/>
+        </member>
+        <member name="M:GitWCore.SqlWorker.SqlReader.GetFloat(System.Int32)">
+            <inheritdoc/>
+        </member>
+        <member name="M:GitWCore.SqlWorker.SqlReader.GetGuid(System.Int32)">
+            <inheritdoc/>
+        </member>
+        <member name="M:GitWCore.SqlWorker.SqlReader.GetInt16(System.Int32)">
+            <inheritdoc/>
+        </member>
+        <member name="M:GitWCore.SqlWorker.SqlReader.GetInt32(System.Int32)">
+            <inheritdoc/>
+        </member>
+        <member name="M:GitWCore.SqlWorker.SqlReader.GetInt64(System.Int32)">
+            <inheritdoc/>
+        </member>
+        <member name="M:GitWCore.SqlWorker.SqlReader.GetName(System.Int32)">
+            <inheritdoc/>
+        </member>
+        <member name="M:GitWCore.SqlWorker.SqlReader.GetOrdinal(System.String)">
+            <inheritdoc/>
+        </member>
+        <member name="M:GitWCore.SqlWorker.SqlReader.GetSchemaTable">
+            <inheritdoc/>
+        </member>
+        <member name="M:GitWCore.SqlWorker.SqlReader.GetString(System.Int32)">
+            <inheritdoc/>
+        </member>
+        <member name="M:GitWCore.SqlWorker.SqlReader.GetValue(System.Int32)">
+            <inheritdoc/>
+        </member>
+        <member name="M:GitWCore.SqlWorker.SqlReader.GetValues(System.Object[])">
+            <inheritdoc/>
+        </member>
+        <member name="M:GitWCore.SqlWorker.SqlReader.IsDBNull(System.Int32)">
+            <inheritdoc/>
+        </member>
+        <member name="M:GitWCore.SqlWorker.SqlReader.NextResult">
+            <inheritdoc/>
+        </member>
+        <member name="M:GitWCore.SqlWorker.SqlReader.Read">
+            <inheritdoc/>
+        </member>
+        <member name="M:GitWCore.SqlWorker.SqlReader.Get``1(System.String,``0)">
+            <summary>
+            Récupère une valeur de type T dans un SqlataReader, reçu après exécution d'une requête 
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="fieldName"></param>
+            <param name="defaultValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GitWCore.SqlWorker.SqlReader.Get``1(System.String)">
+            <summary>
+            Récupère une valeur de type T dans un SqlataReader, reçu après exécution d'une requête 
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="fieldName"></param>
+            <returns></returns>
+        </member>
+        <member name="T:GitWCore.SqlWorker.SqlWorker">
+            <summary>
+            Outil de communication avec la base de données
+            </summary>
+        </member>
+        <member name="M:GitWCore.SqlWorker.SqlWorker.#ctor(GitWCore.SqlWorker.IHostSettings)">
+            <summary>
+             Instancie un nouvel objet SqlWorker
+            </summary>
+            <param name="settings">Configuration de connexion au serveur de base de données</param>
+        </member>
+        <member name="M:GitWCore.SqlWorker.SqlWorker.ExecuteReader``1(System.String,System.Func{GitWCore.SqlWorker.SqlReader,``0})">
+            <summary>
+            Prépare et exécute une commande ExecuteReader en base de données
+            </summary>
+            <typeparam name="TResult"></typeparam>
+            <param name="query"></param>
+            <param name="callback"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GitWCore.SqlWorker.SqlWorker.ExecuteReader``1(System.String,System.Func{GitWCore.SqlWorker.SqlReader,``0},System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            Prépare et exécute une commande ExecuteReader en base de données
+            </summary>
+            <typeparam name="TResult"></typeparam>
+            <param name="query"></param>
+            <param name="callback"></param>
+            <param name="parameters"></param>
+            <returns></returns>
+            <exception cref="T:System.SqlWorkerException"></exception>
+        </member>
+        <member name="M:GitWCore.SqlWorker.SqlWorker.ExecuteListReader``1(System.String,System.Func{GitWCore.SqlWorker.SqlReader,``0})">
+            <summary>
+            Prépare et exécute une commande ExecuteReader qui retourne une liste queryable
+            </summary>
+            <typeparam name="TResult"></typeparam>
+            <param name="query"></param>
+            <param name="callback"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GitWCore.SqlWorker.SqlWorker.ExecuteListReader``1(System.String,System.Func{GitWCore.SqlWorker.SqlReader,``0},System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            Prépare et exécute une commande ExecuteReader qui retourne une liste queryable
+            </summary>
+            <typeparam name="TResult"></typeparam>
+            <param name="query"></param>
+            <param name="callback"></param>
+            <param name="parameters"></param>
+            <returns></returns>
+            <exception cref="T:System.SqlWorkerException"></exception>
+        </member>
+        <member name="M:GitWCore.SqlWorker.SqlWorker.ExecuteNonQuery(System.String)">
+            <summary>
+            Prépare et exécute une requête indéfinie dans la base de données
+            </summary>
+            <param name="query"></param>
+        </member>
+        <member name="M:GitWCore.SqlWorker.SqlWorker.ExecuteNonQuery(System.String,System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            Prépare et exécute une requête indéfinie dans la base de données
+            </summary>
+            <param name="query"></param>
+            <param name="parameters"></param>
+            <exception cref="T:System.SqlWorkerException"></exception>
+        </member>
+        <member name="M:GitWCore.SqlWorker.SqlWorker.ExecuteScalar``1(System.String)">
+            <summary>
+            Prépare et exécute une requête indéfinie dans la base de données en récupérant le premier résultat 
+            </summary>
+            <typeparam name="TResult"></typeparam>
+            <param name="query"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GitWCore.SqlWorker.SqlWorker.ExecuteScalar``1(System.String,System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            Prépare et exécute une requête indéfinie dans la base de données en récupérant le premier résultat 
+            </summary>
+            <typeparam name="TResult"></typeparam>
+            <param name="query"></param>
+            <param name="parameters"></param>
+            <returns></returns>
+            <exception cref="T:System.SqlWorkerException"></exception>
+        </member>
+        <member name="M:GitWCore.SqlWorker.SqlWorker.TryExecute``1(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Func{System.Data.SqlClient.SqlCommand,``0})">
+            <summary>
+            Sécurise l'exécution des requêtes
+            </summary>
+        </member>
+    </members>
+</doc>
